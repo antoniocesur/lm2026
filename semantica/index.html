@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Introducción a las Bases de Datos - Ejemplo Semántico</title>
+</head>
+<body>
+
+    <!-- Paso 1: Cabecera principal y navegación -->
+    <header id="inicio">
+        <h1>Introducción a las Bases de Datos</h1>
+        <nav>
+            <ul>
+                <li><a href="#concepto-tipos">Concepto y Tipos</a></li>
+                <li><a href="#estructura">Estructura de Datos</a></li>
+                <li><a href="#relaciones">Relaciones</a></li>
+                <li><a href="#recursos">Recursos de Interés</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Paso 2: Bloque principal de contenido -->
+    <main>
+
+        <!-- Paso 3: Secciones temáticas y artículos independientes -->
+        <section id="concepto-tipos">
+            <h2>Concepto y Tipos de Bases de Datos</h2>
+            
+            <article>
+                <h3>Bases de datos Relacionales (RDBMS)</h3>
+                <p>
+                    Las bases de datos relacionales organizan la información en tablas compuestas por filas (registros) y columnas (campos). 
+                    Se basan en el modelo relacional y utilizan el lenguaje SQL para realizar consultas y gestionar los datos de manera estructurada.
+                </p>
+                <p>Ejemplos de sistemas gestores relacionales populares son MySQL, PostgreSQL y Oracle.</p>
+            </article>
+
+            <article>
+                <h3>Bases de datos No Relacionales (NoSQL)</h3>
+                <p>
+                    Las bases de datos NoSQL están diseñadas para gestionar grandes volúmenes de datos no estructurados o semiestructurados. 
+                    A diferencia de las relacionales, no requieren un esquema rígido y permiten escalabilidad horizontal.
+                </p>
+                <p>
+                    Existen distintos tipos según el modelo de almacenamiento: orientadas a documentos, clave-valor, columnas o grafos. 
+                    Un ejemplo representativo es MongoDB.
+                </p>
+            </article>
+        </section>
+
+        <section id="estructura">
+            <h2>Estructura de una Base de Datos Relacional</h2>
+            
+            <article>
+                <h3>Componentes fundamentales</h3>
+                <p>Para definir la estructura dentro de un modelo relacional se emplean los siguientes elementos:</p>
+                <ul>
+                    <li><strong>Tablas (Entidades):</strong> Objetos principales sobre los cuales se almacena información estructurada.</li>
+                    <li><strong>Campos (Atributos):</strong> Columnas individuales que definen las propiedades o características de cada entidad.</li>
+                    <li><strong>Registros (Tuplas):</strong> Filas individuales que representan cada elemento o instancia concreta guardada en la tabla.</li>
+                    <li><strong>Claves primarias (Primary Keys):</strong> Campos cuyo valor es único e irrepetible para cada registro, garantizando su identificación.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="relaciones">
+            <h2>Relaciones entre Tablas</h2>
+
+            <article>
+                <h3>Cardinalidades y Claves Foráneas</h3>
+                <p>Las relaciones determinan cómo se vinculan las entidades entre sí según las reglas de negocio del sistema:</p>
+                <ul>
+                    <li><strong>Relación 1:1 (Uno a uno):</strong> Un registro de una tabla se asocia únicamente con un registro de otra tabla.</li>
+                    <li><strong>Relación 1:N (Uno a muchos):</strong> Un registro de la primera tabla puede asociarse con varios de la segunda, pero cada registro de la segunda se vincula solo con uno de la primera.</li>
+                    <li><strong>Relación N:M (Muchos a muchos):</strong> Múltiples registros de una tabla pueden vincularse con múltiples registros de otra, requiriendo una tabla intermedia para romper la relación.</li>
+                </ul>
+                <p>
+                    Para materializar estas conexiones se utiliza la <strong>Clave Foránea (Foreign Key)</strong>, que es una columna en una tabla que hace referencia a la clave primaria de otra tabla.
+                </p>
+            </article>
+        </section>
+
+        <!-- Paso 4: Contenido complementario o lateral -->
+        <aside id="recursos">
+            <h2>Glosario de términos</h2>
+            <dl>
+                <dt><strong>SQL</strong></dt>
+                <dd>Structured Query Language: lenguaje estándar para la gestión y consulta de bases de datos relacionales.</dd>
+                
+                <dt><strong>SGBD</strong></dt>
+                <dd>Sistema de Gestión de Bases de Datos: software encargado de servir de interfaz entre la base de datos, el usuario y las aplicaciones.</dd>
+
+                <dt><strong>Normalización</strong></dt>
+                <dd>Técnica de diseño que organiza las tablas para reducir la redundancia de datos y mejorar la integridad de la información.</dd>
+            </dl>
+
+            <h2>Enlaces recomendados</h2>
+            <ul>
+                <li><a href="https://dev.mysql.com/doc/" target="_blank">Documentación oficial de MySQL</a></li>
+                <li><a href="https://www.postgresql.org/docs/" target="_blank">Documentación oficial de PostgreSQL</a></li>
+                <li><a href="https://www.mongodb.com/docs/" target="_blank">Documentación oficial de MongoDB</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- Paso 5: Pie de página del documento -->
+    <footer>
+        <p>Desarrollado por el alumnado de ASIR - Módulo de Lenguaje de Marcas (Curso académico 2026-2027).</p>
+        <p><small>Contenido educativo distribuido bajo licencia Creative Commons (CC BY-NC 4.0).</small></p>
+        <p><a href="#inicio">Volver al inicio de la página</a></p>
+    </footer>
+
+</body>
+</html>
